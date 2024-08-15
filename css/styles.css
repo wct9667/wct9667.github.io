@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+  font-family: 'Varela Round', sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h4 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+  padding: 1rem 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 1rem;
+  color: #333;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+#mainNav.navbar-scrolled {
+  background-color: #343a40;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler {
+  border: none;
+  color: #333;
+}
+
+/* Masthead */
+.masthead {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/DesertUnity.svg') center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+.masthead h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.masthead h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* About Section */
+.about-section {
+  padding: 4rem 0;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.projects-section h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.projects-section p {
+  font-size: 0.9rem;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.project-text {
+  padding: 2rem;
+}
+
+.project a {
+  color: #007bff;
+}
+
+.project a:hover {
+  color: #0056b3;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 4rem 0;
+  background-color: #343a40;
+  color: #fff;
+}
+
+.contact-section h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.contact-section .card {
+  border: none;
+  background-color: #fff;
+  color: #333;
+}
+
+.contact-section .card i {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.contact-section .social a {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin: 0 1rem;
+}
+
+.contact-section .social a:hover {
+  color: #0056b3;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+}
+
+/* Footer */
+.footer {
+  padding: 1rem 0;
+  background-color: #343a40;
+}
+
+#contacts{
+  background: linear-gradient(to bottom,rgb(25,25,26) 0%, rgba(0, 0, 0, 0.9) 100%, #000 0%);
+}
+
+#projects{
+  background: linear-gradient(to bottom, #ffffff 0%, rgba(0, 0, 0, 0.9) 100%, #000 0%);
+}
+
