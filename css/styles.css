@@ -8,6 +8,14 @@ body {
   overflow-x: hidden;
 }
 
+#contacts{
+  background: linear-gradient(to bottom,rgb(25,25,26) 0%, rgba(0, 0, 0, 0.9) 100%, #000 0%);
+}
+
+#projects{
+  background: linear-gradient(to bottom, #ffffff 0%, rgba(0, 0, 0, 0.9) 100%, #000 0%);
+}
+
 h1, h2, h4 {
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
@@ -26,7 +34,7 @@ a:hover {
 /* Navbar */
 .navbar {
   padding: 1rem 0;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(178, 171, 171, 0.9);
   transition: background-color 0.3s ease;
 }
 
@@ -59,7 +67,7 @@ a:hover {
 /* Masthead */
 .masthead {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/background.jpg') center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url('../assets/img/DesertUnity.png') center center no-repeat;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -79,6 +87,7 @@ a:hover {
 /* About Section */
 .about-section {
   padding: 4rem 0;
+  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 20%, rgba(255, 255, 255, 1) 100%);
 }
 
 .about-section h2 {
@@ -91,22 +100,12 @@ a:hover {
   line-height: 1.7;
 }
 
-/* Projects Section */
-.projects-section {
-  padding: 4rem 0;
-  background-color: #f8f9fa;
-}
-
-.projects-section h4 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.projects-section p {
-  font-size: 0.9rem;
+img{
+  border: 5px solid #000;
 }
 
 .project img {
+  border: 5px solid #000;
   max-width: 100%;
   height: auto;
   margin-bottom: 1rem;
@@ -143,6 +142,7 @@ a:hover {
   font-size: 1.5rem;
   margin: 0 1rem;
 }
+
 
 
 /* Footer */
