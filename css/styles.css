@@ -21,7 +21,6 @@ a {
 
 a:hover {
   color: #0056b3;
-  text-decoration: underline;
 }
 
 /* Navbar */
@@ -32,7 +31,7 @@ a:hover {
 }
 
 .navbar-brand {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -44,7 +43,7 @@ a:hover {
 }
 
 .nav-link:hover {
-  color: #007bff;
+  color: #dee4ec;
 }
 
 #mainNav.navbar-scrolled {
@@ -60,7 +59,7 @@ a:hover {
 /* Masthead */
 .masthead {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/DesertUnity.svg') center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/background.jpg') center center no-repeat;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -157,8 +156,6 @@ a:hover {
 
 .contact-section .social a:hover {
   color: #0056b3;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 100%;
 }
 
 /* Footer */
@@ -167,11 +164,69 @@ a:hover {
   background-color: #343a40;
 }
 
-#contacts{
-  background: linear-gradient(to bottom,rgb(25,25,26) 0%, rgba(0, 0, 0, 0.9) 100%, #000 0%);
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .navbar-brand {
+      font-size: 1.25rem;
+  }
+
+  .masthead h1 {
+      font-size: 2.5rem;
+  }
+
+  .masthead h2 {
+      font-size: 1.25rem;
+  }
 }
 
-#projects{
-  background: linear-gradient(to bottom, #ffffff 0%, rgba(0, 0, 0, 0.9) 100%, #000 0%);
+@media (max-width: 768px) {
+  .navbar-brand {
+      font-size: 1rem;
+  }
+
+  .masthead h1 {
+      font-size: 2rem;
+  }
+
+  .masthead h2 {
+      font-size: 1rem;
+  }
+
+  .about-section p, .projects-section p {
+      font-size: 0.9rem;
+  }
+
+  .project img {
+      margin-bottom: 1.5rem;
+  }
 }
 
+@media (max-width: 576px) {
+  .masthead {
+      padding: 2rem 0;
+  }
+
+  .masthead h1 {
+      font-size: 1.75rem;
+  }
+
+  .masthead h2 {
+      font-size: 1rem;
+  }
+
+  .about-section {
+      padding: 2rem 0;
+  }
+
+  .projects-section {
+      padding: 2rem 0;
+  }
+
+  .contact-section {
+      padding: 2rem 0;
+  }
+
+  .contact-section .social a {
+      margin: 0 0.5rem;
+  }
+}
