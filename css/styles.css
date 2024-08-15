@@ -16,11 +16,11 @@ h1, h2, h4 {
 
 a {
   text-decoration: none;
-  color: #007bff;
+  color: #55a3f7;
 }
 
 a:hover {
-  color: #0056b3;
+  color: #a4c9f0;
 }
 
 /* Navbar */
@@ -116,14 +116,6 @@ a:hover {
   padding: 2rem;
 }
 
-.project a {
-  color: #007bff;
-}
-
-.project a:hover {
-  color: #0056b3;
-}
-
 /* Contact Section */
 .contact-section {
   padding: 4rem 0;
@@ -144,19 +136,14 @@ a:hover {
 
 .contact-section .card i {
   font-size: 2rem;
-  color: #007bff;
   margin-bottom: 1rem;
 }
 
 .contact-section .social a {
   font-size: 1.5rem;
-  color: #007bff;
   margin: 0 1rem;
 }
 
-.contact-section .social a:hover {
-  color: #0056b3;
-}
 
 /* Footer */
 .footer {
