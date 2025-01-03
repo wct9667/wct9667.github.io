@@ -70,6 +70,21 @@ a:hover {
   text-align: center;
 }
 
+.winter {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url("../assets/img/Winter'sDawn.png") center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+.echo {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url("../assets/img/Echo.png") center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
 .masthead h1 {
   font-size: 3rem;
   font-weight: 900;
