@@ -64,7 +64,7 @@ a:hover {
 
 .masthead {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('../assets/img/background.png') center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('../assets/img/Portrait.jpg') center center no-repeat;
   background-size: cover;
   color: #fff;
   text-align: center;
@@ -89,6 +89,30 @@ a:hover {
 .autumn {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url("../assets/img/AutumnIdle.png") center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+.cosmic {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url("../assets/img/CosmicWanderer_MastHead.png") center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+.missile {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url("../assets/img/MissileCommand_MastHead.png") center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+.miscprojects {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url("../assets/img/MiscProjects_MastHead.png") center center no-repeat;
   background-size: cover;
   color: #fff;
   text-align: center;
