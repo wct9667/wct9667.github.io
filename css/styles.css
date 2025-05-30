@@ -118,6 +118,14 @@ a:hover {
   text-align: center;
 }
 
+.echoes {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url("../assets/img/Echoes_Masthead.png") center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
 .masthead h1 {
   font-size: 3rem;
   font-weight: 900;
