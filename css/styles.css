@@ -1,4 +1,3 @@
-/* General Styles */
 body {
   font-family: 'Varela Round', sans-serif;
   color: #333;
@@ -64,64 +63,11 @@ a:hover {
 
 .masthead {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('../assets/img/Portrait.jpg') center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+              var(--bg-img);
   background-size: cover;
-  color: #fff;
-  text-align: center;
-}
-
-.winter {
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url("../assets/img/Winter'sDawn.png") center center no-repeat;
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-}
-
-.echo {
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url("../assets/img/Echo.png") center center no-repeat;
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-}
-
-.autumn {
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url("../assets/img/AutumnIdle.png") center center no-repeat;
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-}
-
-.cosmic {
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url("../assets/img/CosmicWanderer_MastHead.png") center center no-repeat;
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-}
-
-.missile {
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url("../assets/img/MissileCommand_MastHead.png") center center no-repeat;
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-}
-
-.miscprojects {
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url("../assets/img/MiscProjects_MastHead.png") center center no-repeat;
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-}
-
-.echoes {
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url("../assets/img/Echoes_Masthead.png") center center no-repeat;
-  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #fff;
   text-align: center;
 }
