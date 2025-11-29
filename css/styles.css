@@ -63,10 +63,21 @@ a:hover {
 
 .masthead {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
               var(--bg-img);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+}
+
+.portrait{
+    height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)),
+              var(--bg-img);
+  background-size: cover;
+  background-position: center-top;
   background-repeat: no-repeat;
   color: #fff;
   text-align: center;
