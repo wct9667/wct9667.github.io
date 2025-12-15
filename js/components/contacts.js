@@ -1,6 +1,6 @@
 export function Generate() {
   return `
-        <section class="contact-section bg-black" id="contacts">
+    <section class="contact-section bg-black" id="contacts">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5">
                 <div class="col-md-4 mb-3 mb-md-0">
