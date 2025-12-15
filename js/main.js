@@ -5,6 +5,7 @@ import * as navbar from "./components/navbar.js";
 HookUpComponent("footer", footer.Generate());
 HookUpComponent("contacts", contacts.Generate());
 HookUpComponent("navbar", navbar.Generate());
+navbar.InitBackButton();
 
 
 function HookUpComponent(id, component) 
@@ -16,3 +17,4 @@ function HookUpComponent(id, component)
   
   el.innerHTML = component;
 }
+
