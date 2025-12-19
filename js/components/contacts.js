@@ -7,7 +7,7 @@ export function Generate() {
                     <div class="card py-4 h-100">
                         <div class="card-body text-center">
                             <i class="fas fa-envelope text-black mb-2"></i>
-                            <h4 class="text-uppercase m-0">Personal Email</h4>
+                            <h4 class="text-uppercase m-0">Email</h4>
                             <hr class="my-4 mx-auto">
                             <div class="text-black-50">williamcarltallarico@gmail.com</div>
                         </div>
