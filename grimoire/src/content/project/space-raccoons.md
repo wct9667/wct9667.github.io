@@ -12,7 +12,7 @@ heroImage: '../../assets/SpaceRaccoons.png'
 skills: ["Adobe Suite", "Gimp", "Google Suite", "Python"]
 links: [{name: "Website", url: "https://www.spaceraccoons.net/"}]
 ---
-## Overview
+## OVERVIEW
 In Space Raccoons : Raccoons in Space, play as a raccoon rummaging through piles of space trash, trying to find the coolest trash before anyone else.
 
 Space Raccoons has undergone a successful launch underneath `Trashtronauts LLC`, where it underwent a Kickstarter crowdfunding campaign.
@@ -33,7 +33,7 @@ Whats a fun spin on trash and raccoons?
 My goal for the game was to make the player feel like they were rummaging for cool trinkets within a chaotic and whimsical dumpster. 
 With raccoons trying out pieces of trash-tech thrown out for good reason. Trash flying through the air. And nefarious aliens trying to hitch a free ride.
 
-### Core Design
+### CORE DESIGN
 The core design of Space Raccoons is based in the cards.
 Cards could either be played for an effect, or stashed for points.
 Cards also made the primary interaction space within the "Trash-Heap".
@@ -49,7 +49,7 @@ Played cards re-entered circulation a turn after playing, allowing multiple play
 Players take turns drawing cards, playing cards to collect other cards, and stashing cards for points.
 This proceeds until the game ends, and players count the points in their stash. 
 
-### Brief History
+### BRIEF HISTORY
 The first prototype of Space Raccoons was with a deck of playing cards. 
 Stacks of such cards represented piles of garbage, and each had a point value.
 Players would take turns revealing and moving cards.
@@ -95,10 +95,10 @@ To me, the game never really felt like it was ready for a launch, I don't think 
 It was.
 So we launched it.
 
-## Contributions
+## CONTRIBUTIONS
 Being on a team of 3, we all wore many hats to make this game a success. 
 Below are the areas where I had my greatest contributions to the project.
-### Design & Prototyping
+### DESIGN & PROTOTYPING
 I created and balanced the cards and systems of the game. 
 I was not alone in my work on this, and worked closely with Brandon Korn and William Buxton on the games design.
 I was responsibility for the prototyping aspects of the game.
@@ -107,14 +107,14 @@ Each week, a new prototype was tested, feedback accumulated integrated into a ne
 This process was arduous early, and I refined it over time, using scripts and automation to speed up prototyping.
 Such iteration was vastly important to the project. 
 
-### Card Creation & Asset Pipeline
+### CARD CREATION & ASSET PIPELINE
 Touching again on the automation, I created the cards within the game. 
 I contributed to their design and created the layout for each card.
 Early on, this was a manual process, making prototyping slow and painful.
 To speed up development, I setup systems of scripting and automation to populate cards from a spreadsheet.
 With a click of a button I could make 200 test cards, perfect for rapid iteration.
 
-### Production
+### PRODUCTION
 I led production effects both in terms of the teams process, and the actual production of the game.
 In terms of process, I set timelines, deliverables, goals and documentation. 
 The project operated on a 1-week sprint structure to account for weekly playtesting.
