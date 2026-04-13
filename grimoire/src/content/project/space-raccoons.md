@@ -8,7 +8,7 @@ currentStatus: 'In Production (Kickstarted)'
 teamSize: '3'
 company: 'Trashtronauts LLC'
 role: 'Producer | Designer'
-heroImage: '../../assets/SpaceRaccoons.png'
+heroImage: '../../assets/SpaceRaccoonsPlaymat.png'
 skills: ["Adobe Suite", "Gimp", "Google Suite", "Python"]
 links: [{name: "Website", url: "https://www.spaceraccoons.net/"}]
 ---
@@ -126,6 +126,18 @@ I ensured assets were in the proper template and format for printing.
 I communicated with our production company, sending proofs and ensuring quotes were established.
 All of this work was essential to build up our Kickstarter timeline, as well as the asset production that followed.
 All in all, I managed a successful Kickstarter campaign, where production of the game is nearly complete.
+
+## TEAMMATES
+Shoutout to my teammates!!!
+
+### [Brandon Korn](https://www.linkedin.com/in/brandon-korn/)
+The lead designer of Space Raccoons, also worked on some of the forward facing elements of the company. Including website, Kickstarter, and LLC incorporation.
+
+
+### [Will Buxton](https://www.linkedin.com/in/will-buxton-90366721b/)
+
+
+The artist on the project, coordinated all of the art and aesthetic direction of the game and iterated on all game art. Also heavily assisted in design and playtesting.
 
 
 
