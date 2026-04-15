@@ -3,34 +3,55 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+const name = SITE_TITLE;
+const title = "Technical Designer | Producer";
+import Portrait from '../assets/CloneHelmets.jpg';
+import {Image} from "astro:assets";
 ---
-
-
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
-		<Header />
-		<main>
-			<h1 class="text-4xl font-semibold mb-2">{SITE_TITLE}</h1>
-			<p class="text-lg text-gray-700 mb-12">Technical Designer | Producer</p>
-			
-			<section class="grid gap-6 sm:grid-cols-3">
-				<a href="/project" class="bg-brand-green text-brand-greye px-6 py-8 rounded-lg shadow-lg hover:bg-green-700 transition transform hover:-translate-y-1 hover:scale-105 text-left">
-					<h2 class="text-2xl font-semibold mb-2">Projects</h2>
-					<p class="text-gray-200">Check out my work.</p>
-				</a>
+<body>
+<Header/>
+<main class="flex-grow px-4 py-16 max-w-6xl mx-auto">
+	<section class="mb-12">
+		<h1 class="text-4xl font-semibold mb-2">{name}</h1>
+		<p class="text-lg text-gray-700">{title}</p>
+	</section>
 
-				<a href="/blog" class="bg-brand-green text-brand-grey px-6 py-8 rounded-lg shadow-lg hover:bg-green-700 transition transform hover:-translate-y-1 hover:scale-105 text-left">
-					<h2 class="text-2xl font-semibold mb-2">Blog</h2>
-					<p class="text-gray-200">Read my blog.</p>
-				</a>
+	<section class="grid gap-8 md:grid-cols-2 items-center">
+		<div class="flex justify-center md:justify-start">
+			<Image
+				src={Portrait}
+				alt={`${name} profile`}
+				class="w-128 h-128 rounded-xl shadow-lg object-cover"
+				width={512}
+				height={512}
+				loading="eager"
+			/>
+		</div>
 
-				<a href="/about" class="bg-brand-green text-brand-grey px-6 py-8 rounded-lg shadow-lg hover:bg-green-700 transition transform hover:-translate-y-1 hover:scale-105 text-left">
-					<h2 class="text-2xl font-semibold mb-2">About Me</h2>
-					<p class="text-gray-200">Learn more about my journey.</p>
-				</a>
-			</section>
-		</main>
-		<Footer />
-	</body>
+		<div class="text-left">
+			<h2 class="text-3xl font-bold mb-2">About Me</h2>
+			<p class="text-gray-700">
+				I am a Producer and Technical Designer focused on empowering teams by removing obstacles, building adaptable systems, and fostering clear communication.
+				I bring a strong technical design perspective to ensure that creative vision and technical execution align.
+				I lead with empathy, clear communication, and a commitment to building environments where both people and ideas can thrive.
+			</p>
+
+			<a href="/project"
+			   class="inline-block mt-4 bg-brand-green text-brand-grey px-6 py-3 rounded-lg shadow hover:bg-green-700 transition">
+				View My Projects
+			</a>
+
+			<a href="/blog"
+			   class="inline-block mt-4 bg-brand-green text-brand-grey px-6 py-3 rounded-lg shadow hover:bg-green-700 transition">
+				Check out my Blog
+			</a>
+		</div>
+	</section>
+</main>
+
+<Footer/>
+</body>
