@@ -54,16 +54,22 @@ The results contribute both a historical perspective on the stack and new insigh
 ### GAME DESIGN
 I designed and documented the game's design iterations.
 I managed core game design documentation, with reasoning behind design pivots.
+
 ...
 
 ### PROTOTYPING
+I managed the paper prototype phase of our development.
+Using Python and Gimp, I setup card image creation automation from a spreadsheet, which allowed us to rapidly iterate on card designs.
+
 ...
 
 ### CONTENT DESIGN 
+
 ...
 ### SYSTEMS PROGRAMMING
 ...
 ### UI PROGRAMMING
+I programmed the card UI systems,
 ...
 
 
