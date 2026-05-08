@@ -13,7 +13,7 @@ skills: ["Unity", "C#", "Jira", "Documentation"]
 links: [{name: "Website/Download", url: "https://www.index1391.com"}, 
         {name: "Unloaded Dice", url: "https://www.linkedin.com/company/unloaded-dice-games"}]
 ---
-## OVERVIEW
+# OVERVIEW
 Play as a Machine Priest tasked with purging the VIRUS infecting your faith. 
 How far are you willing to bend the rules to restore order?
 
@@ -33,8 +33,8 @@ The Stack does have a limited capacity, and when overflowed, older (bottom) elem
 The Stack is often a background structure within games to assist resolution, _Index 1391_ is using it as a primary foreground mechanic, from which the player directly interacts.
 
 
-## CONTRIBUTIONS
-### GAME DESIGN RESEARCH
+# CONTRIBUTIONS
+## GAME DESIGN RESEARCH
 To establish a basis for the design of the game, I did background research into the **Stack** mechanic as seen through other games.
 While widely popularized by Magic The Gathering (1994), the stack as a resolution system predates collectible card games and has persisted across decades of board and card game design.
 
@@ -51,24 +51,24 @@ The results contribute both a historical perspective on the stack and new insigh
 
 **The Paper Is Coming Soon**
 
-### GAME DESIGN
+## GAME DESIGN
 I designed and documented the game's design iterations.
 I managed core game design documentation, with reasoning behind design pivots.
 
 ...
 
-### PROTOTYPING
+## PROTOTYPING
 I managed the paper prototype phase of our development.
 Using Python and Gimp, I setup card image creation automation from a spreadsheet, which allowed us to rapidly iterate on card designs.
 
 ...
 
-### CONTENT DESIGN 
+## CONTENT DESIGN 
 
 ...
-### SYSTEMS PROGRAMMING
+## SYSTEMS PROGRAMMING
 ...
-### UI PROGRAMMING
+## UI PROGRAMMING
 I programmed the card UI systems,
 ...
 
