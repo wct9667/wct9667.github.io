@@ -11,8 +11,7 @@ role: 'Technical Designer | UI Programmer'
 heroImage: '../../assets/Index1391.png'
 skills: ["Unity", "C#", "Jira", "Google Suite", "Gimp", "Python", "Unit Tests"]
 links: [{name: "Website/Download", url: "https://www.index1391.com"}, 
-        {name: "Unloaded Dice Linkedin", url: "https://www.linkedin.com/company/unloaded-dice-games"},
-        {name: "GitHub", url: "https://github.com/Le-Vincent56/Sanctum-Protocol"}]
+        {name: "Unloaded Dice Linkedin", url: "https://www.linkedin.com/company/unloaded-dice-games"}]
 ---
 # OVERVIEW
 Play as a Machine Priest tasked with purging the VIRUS infecting your faith. 
