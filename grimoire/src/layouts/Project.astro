@@ -72,7 +72,13 @@ const {
                 <slot/>
             </div>
 
-            <aside class="lg:col-span-4 lg:sticky lg:top-24 h-fit text-sm order-first lg:order-none mb-4 lg:mb-0 pt-2 lg:pt-3">
+            <aside
+                    class="custom-scrollbar lg:col-span-4 lg:sticky lg:top-24
+         lg:max-h-[calc(100vh-6rem)]
+         lg:overflow-y-auto
+         text-sm order-first lg:order-none
+         mb-4 lg:mb-0 pt-2 lg:pt-3"
+            >
                 <div class="space-y-4 lg:space-y-6 pl-0 lg:pl-6">
 
                     {(company || role || startDate || updatedDate) && (
@@ -111,7 +117,9 @@ const {
                             <div>
                                 <div class="uppercase font-semibold tracking-wide mb-1">Contents</div>
                                 <ul class="list-none ml-0 space-y-1">
-                                    {headings.map(heading => (
+                                    {headings 
+                                        .filter(heading => heading.depth <= 2)
+                                        .map(heading => (
                                             <li class={`${heading.depth === 2 ? 'pl-3' : ''}`}>
                                                 <a href={`#${heading.slug}`} class={`${heading.depth === 1 ? 'font-semibold' : 'text-xs'}`}>
                                                     {heading.text}

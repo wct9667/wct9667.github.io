@@ -17,6 +17,14 @@ main {
     margin: auto;
     padding: 3em 1em;
 }
+
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-brand-green) transparent;
+}
+ul{
+    margin-bottom: 2em;
+}
 html {
     scroll-padding-top: 6rem;
     scroll-behavior: smooth;
@@ -35,7 +43,7 @@ h1 {
     font-size: 2.8em;
 }
 h2 {
-    font-size: 2.441em;
+    font-size: 2.241em;
 }
 h3 {
     font-size: 1.953em;
