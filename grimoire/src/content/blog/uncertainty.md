@@ -28,7 +28,7 @@ My focus shifted dramatically during my first year in grad school.
 This started on echoes. 
 I applied with the goal of being a game programmer to deepen my technical portfolio. 
 Instead, I was offered a game director position to allow Sam Burgoyne to move into the Producer role. 
-This wasn't a smooth road, and I needed help from Erika and Sam to adjust. 
+This wasn't a smooth road, and I needed help from [Erika](https://esmesh.github.io/) and [Sam](https://samburgoyne.com/portfolio) to adjust. 
 I often took on too much work, spending lots of my time working, yet not leading. 
 I learned to ask two questions to guide my priorities: Do I want to? Do I need to? Diving deeper into the rationale for tasks & who was best suited to work on them led to frequent production process & infrastructure discussions with Erika & Sam. 
 By April, they'd asked me to consider taking over as producer for Fall 2025.
@@ -74,7 +74,7 @@ Despite my doubts, I am having success collecting both sources and data.
 I once again have support, someone to help both push me and help me quell my own doubts.
 
 Would I ever have done any of this alone… no. Each step of my journey, each opportunity, there have been others to help. 
-I get to thank Erika Mesh, Nick Lalone, Ben Snyder, students at the VIP Consortium, echoes students, and countless others.
+I get to thank Erika Mesh, [Nick Lalone](https://nicklalone.com/), [Ben Snyder](https://www.linkedin.com/in/ben-snyder-00a5382b/), students at the VIP Consortium, echoes students, and countless others.
 In Italy, there were other students in the same boat as me. 
 Every aspect of my life has support that helps me both understand and grab opportunities presented to me.
 
