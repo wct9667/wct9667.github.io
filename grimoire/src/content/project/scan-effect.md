@@ -57,7 +57,7 @@ The result created a scan-like visualization where selected objects remained vis
 # Part 4: Blueprint Control – Simple On/Off [Deprecated]
 Originally, I explored a system where the player could toggle outlines on objects through interaction.
 
-This setup used an interaction system driven by interface, an abstract actor class and reusable component responsible for enabling and disabling custom depth rendering
+This setup used an interaction system driven by interface, an abstract actor class and reusable component responsible for enabling and disabling custom depth rendering.
 The component handled toggling custom depth on meshes at runtime, while actors implemented an interaction interface that triggered the effect.
 
 Although functional, the approach became somewhat rigid since objects needed to inherit from a shared base class. The setup also required repetitive manual configuration. 
