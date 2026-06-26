@@ -18,6 +18,8 @@ In Space Raccoons : Raccoons in Space, play as a raccoon rummaging through piles
 Space Raccoons has undergone a successful launch underneath `Trashtronauts LLC`, where it underwent a Kickstarter crowdfunding campaign.
 Currently the game is under production, and will reach backers soon.
 
+![SpaceRaccoons.jpg](../../assets/SpaceRaccoonsProduct.jpg)
+
 Space Raccoons derived from the question, "whats a funny animal to make a game from?".
 Design originated from a set of questions much like these.
 
@@ -31,7 +33,7 @@ Whats a fun spin on trash and raccoons?
 `Space`
 
 My goal for the game was to make the player feel like they were rummaging for cool trinkets within a chaotic and whimsical dumpster. 
-With raccoons trying out pieces of trash-tech thrown out for good reason. Trash flying through the air. And nefarious aliens trying to hitch a free ride.
+With raccoons trying out pieces of trash-tech thrown out for good reason. Trash flying through the air. And nefarious aliens are trying to hitch a free ride.
 
 ## CORE DESIGN
 The core design of Space Raccoons is based in the cards.
@@ -54,7 +56,7 @@ The first prototype of Space Raccoons was with a deck of playing cards.
 Stacks of such cards represented piles of garbage, and each had a point value.
 Players would take turns revealing and moving cards.
 
-The core gameplay then, which is still how the game functions today, was revolved around manipulating, collecting, playing and stashing cards.
+The core gameplay then, which is still how the game functions today, was revolved around manipulating, collecting, playing, and stashing cards.
 Whoever had the most points at the end of the game, won the game.
 
 Soon enough, art and effects were attached to those cards. 
@@ -64,7 +66,7 @@ Cards belong to sets, which scale up in point value the more a player has.
 two other types of cards existed, the "Typeless" cards with a static point value. 
 And "Hazards", who would make rummaging through trash have some exciting risk.
 
-Space Raccoons was prototyped for over two years and had numerous iterations. 
+Space Raccoons was prototyped for over two years and had many iterations. 
 Mechanics were cut, readded, and cut again.
 Each iteration brought different challenges.
 
@@ -113,8 +115,8 @@ To speed up development, I setup systems of scripting and automation to populate
 With a click of a button I could make 200 test cards, perfect for rapid iteration.
 
 ## PRODUCTION
-I led production effects both in terms of the teams process, and the actual production of the game.
-In terms of process, I set timelines, deliverables, goals and documentation. 
+I led production effects both in terms of the team process, and the actual production of the game.
+In terms of process, I set timelines, deliverables, goals, and documentation. 
 The project operated on a 1-week sprint structure to account for weekly playtesting.
 Feedback from a playtest was used to guide the next week's work.
 As the game entered production, the timeline shifted.

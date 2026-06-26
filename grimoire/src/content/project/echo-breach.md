@@ -50,21 +50,25 @@ To make the UI render over other objects, it was rendered to a separate UI camer
 
 ## DIEGETIC UI SCREENS
 I created the diegetic screens of the planet and countdown timer within the ship.
-These gave the player's information regarding their fate.
-Rather than make these separate from the world, it was fitting to make them a part of the space-ship.
-This UI required render-textures, and additional cameras that would render to those textures. 
-This effect created screens which could be placed around the ship to show specific UI.
+These gave the player's information regarding their fate, as if they ran out of time they would lose.
+Rather than make these separate from the world as part of the overall screen, it was fitting to make them a part of the space-ship.
+This UI required render-textures that would be used on materials, and additional cameras that would render objects such as a timer to those textures while the game was running. 
+This effect created screens which could be placed around the ship to show specific UI diegetically and keep the player immersed in the game experience.
+To make the UI more interesting, I dispersed static broken displays within the level in addition to the dynamic diegetic screens.
+
 
 ## MENU UI
-I programmed the Volume Slider to hook into global volume settings. 
-Setup materials to support lighting within the UI.
-I also made the planet scale slowly, making the main menu feel more dynamic.
+I programmed the Volume Slider to hook into global volume settings for the game, ensuring that all sound-producing objects also hooked into the volume system. 
+The main menu initially felt bland, so in an effort to make it more dynamic and feel alive, I implemented lighting into the main menu.
+This took the form of a vignette effect, with a flashing red light in the middle of the screen.
+I also made the planet scale slowly from the ship's viewport as if the ship were actively crashing into the planet, imparting a sense of urgency to the player even within the menus. 
 
 ##  TECH ART
 I also worked on various tech-art tasks within the game that needed doing.
-I set up the lights and lighting within the scene. I baked lighting and set up lighting and reflection volumes for further realism.
+I set up the lights and lighting within the scene.
+I baked lighting and set up lighting and reflection volumes for further realism.
 The game was on Web-GL so the resolution and quality of the lighting was limited by Web-GL's performance.
-I implemented the post-process effects such as bloom into the scene.
+I implemented the post-process effects such as bloom into the scene to make buttons feel more realistic.
 Finally, I created shaders for use within the transparency system, as well as a static screen shader to create broken displays within the level.
 
 

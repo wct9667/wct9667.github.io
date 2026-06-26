@@ -9,7 +9,7 @@ teamSize: '6'
 company: 'Unloaded Dice Games'
 role: 'Technical Designer | UI Programmer'
 heroImage: '../../assets/Index1391.png'
-skills: ["Unity", "C#", "Jira", "Google Suite", "Gimp", "Python", "Unit Tests"]
+skills: ["Unity", "C#", "Jira", "Google Suite", "Gimp", "Python", "Typescript", "Unit Tests"]
 links: [{name: "Website/Download", url: "https://www.index1391.com"}, 
         {name: "Unloaded Dice Linkedin", url: "https://www.linkedin.com/company/unloaded-dice-games"}]
 ---
@@ -92,7 +92,7 @@ Cards were designed around three archetypes:
 - These three archetypes had some dissonance with the game's **Stack** mechanic. 
 For one, our narrative, design, and aesthetics were heavily influenced by the dichotomy of Order vs Chaos.
 Introducing a third archetype to this made this relationship less clear.
-Furthermore, the strategies of the archetypes were not well defined, leading to a lack of consistency in the gameplay and clarity in content design.
+Furthermore, the strategies of the archetypes were not well-defined, leading to a lack of consistency in the gameplay and clarity in content design.
 
 #### SOLUTION
 The archetypes were downsized to two:
@@ -121,7 +121,7 @@ Below is an example of a card from the 3rd version of the paper prototype.
 
 ## CONTENT DESIGN & IMPLEMENTATION
 I was responsible for the content design of the game, the cards, enemies, doctrines, keywords etc.
-This started with generation of ideas in spreadsheets, testing them on paper, and finally creating them within our Unity game engine.
+This started with a generation of ideas in spreadsheets, testing them on paper, and finally creating them within our Unity game engine.
 Content was created in a modular way, leveraging the CAT (Content Authoring Tool) to generate pieces that linked to one another.
 This tool, along with a sandbox tool, allowed for easy content creation and testing.
 I generated a majority of the card and doctrine content within the game through the CAT and related tools.
@@ -156,10 +156,6 @@ Below is an example of a changelog I created for a content update within the gam
   *A nerf to reckless to make it feel more “reckless”. This balances it to be more aggressive but dampens the players ability to defend themselves. We could buff its damage potential in the future if the halving block is too much of a downside.*
 
 ##### ADDITIONS
-* **Shielded C `shielded`**  
-  Gain 5 Shield at the start of your turn;  
-  *A small doctrine, this will help the life loss strategies and can combat enemy decompile and rampant chipping.*
-
 * **Learned UC `learned`**  
   At the start of stack resolution, draw cards equal to empty spaces on the Stack / 2;  
   *This doctrine will encourage leaving space open on the stack. I think it's interesting at least. Might be very very good.*
@@ -172,9 +168,6 @@ Below is an example of a changelog I created for a content update within the gam
   Removed Immutable.  
   *Didn’t need it, and given this is the rare variant, it feels better to be able to move the silence around rather than watch it leave the stack.*
 
-* **C-2 C Scripture  `c_draw`**  
-  Now has \[Immutable\]  
-  *Gives it less ability to change its card advantage*
 * **C-1  UC Resolute Smite `c_damage_per_block`**  
   Now has \[Immutable\]  
   *Makes it hard to scale up value. I could've hardcoded it, yet I wanted flexibility in the future to potentially scale this effect.*
@@ -186,22 +179,6 @@ Below is an example of a changelog I created for a content update within the gam
   Cancel Stack Resolution; \[Feeble-1\]   
   *Limited life 1-time silence effect to add another one into the mix. Technically it could run multiple turns.*
 
-* **T-1 UC Disruption Prayer**: **`t_shuffle_all_enemy`**  
-  Shuffle all Enemy Protocols on the Stack;  
-  *Meant to disrupt enemy protocol placement, potentially gaining advantage when moving utility protocols above player protocols.*
-* **C-1 UC Uproot**: **`c_destroy_all_unstable`**  
-  Destroy all Protocols on the Stack; \[Unstable\]  
-  *A rare commandment which destroys, yet its unpredictability could either be frustrating or fun, so we will have to see.*
-* **C-2 UC Incessant Spike**: **`c_damage_loop_unstable_grow`**  
-  Deal 1 Damage; Loop Self; \[Unstable\] \[Grow-2\]  
-  *This card could go crazy by itself, or be worthless. High Reward, but really no risk. I think it could be fun. Very bad odds to be better than smite.*
-* **T-1 C Vex**: **`t_swap_top_enemy_draw`**  
-  Swap the first 2 enemy protocols; Draw 1;  
-  *Meant to disrupt enemy protocol placement, with a card draw if it has no valid targets.*
-* **C-2 UC Triumphant Smite**: **`c_damage_if_top_rampant_add`**  
-  Deal 10 damage if on the Top of the Stack; \[Rampant\]-Add 5 to this;  
-  *A fun conditional damage card, where you try to move it up over and over again. Great with Prioritize on its own.*
-
 ## PROGRAMMING
 In addition to generating content within the game, I programmed parts of the game's systems to allow for content to function.
 The most important items I contributed are below.
@@ -209,18 +186,17 @@ The most important items I contributed are below.
 - **Run Systems:** Management of the player's deck and health over the course of the game.
 - **Effects:** The individual modular components that make up an effect. Predicates, gates, and operations. These are scripts that deal damage, draw cards, target enemy protocols etc. These were linked to in the CAT and other external tools to easily edit content within the game.
 - **Handlers:** The Handlers for doctrines, allowing them to have custom functionality.
+- **Data Tracking Systems:** The systems that track player data for balance and statistics. These systems were unit tested and use the game's event system to track data, which is sent to a Google database.
 
 - **Tool Extensions:** Extensions to the CAT and relational tools to improve functionality.
 
 ## UI PROGRAMMING
-I programmed various aspects of the game's UI, most importantly the Cards and non-battle screens. 
-I did not design or created UI assets, I simply programmed the UI to function based on designs.
+I programmed various aspects of the game's UI, most importantly the Cards and non-battle screens.
 
 - **Hand UI:** The hand of cards that the player interacts with. Controls when and where a card can be played, and can be reordered to the player's liking.
 - **Card UI:** The cards themselves, implementation of UI designs that programmatically create cards when needed (such as when a card is drawn).
-- **Card Screen UI:** UI screens to display cards and related information. These leverage pooling to reduce the number of objects created. They also have toggleable interactively depending on the application.
 
-- **Other Node Screens:** The various screens that the player interacts with outside the main battle screen and map screen.
+- **Card Screen UI:** UI screens to display cards and related information. These are made up of the various rewards and deck view screens. These leverage pooling to reduce the number of objects created. They also have toggleable interactively depending on the application.
 
 
 
