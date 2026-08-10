@@ -14,13 +14,13 @@ import {Image} from "astro:assets";
 	</head>
 <body>
 <Header/>
-<main class="flex-grow px-4 py-16 max-w-6xl mx-auto">
+<main class="grow px-4 py-16 max-w-6xl mx-auto">
 	<section class="mb-12">
 		<h1 class="text-4xl font-semibold mb-2">{name}</h1>
 		<p class="text-lg text-gray-700">{title}</p>
 	</section>
 
-	<section class="grid gap-8 md:grid-cols-2 items-center">
+	<section class="grid gap-8 md:grid-cols-2">
 		<div class="flex justify-center md:justify-start">
 			<Image
 				src={Portrait}

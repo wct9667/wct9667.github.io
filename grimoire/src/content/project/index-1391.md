@@ -7,10 +7,11 @@ pubDate: 'August 25, 2026'
 currentStatus: 'In Production (2026)'
 teamSize: '6'
 company: 'Unloaded Dice Games'
-role: 'Technical Designer | UI Programmer'
+role: 'Technical Designer | Systems & UI Programmer | Producer'
 heroImage: '../../assets/Index1391.png'
 skills: ["Unity", "C#", "Jira", "Google Suite", "Gimp", "Python", "Typescript", "Unit Tests"]
-links: [{name: "Website/Download", url: "https://www.index1391.com"}, 
+links: [{name: "Website", url: "https://www.index1391.com"},
+        {name: "Steam Page", url: "https://store.steampowered.com/app/4637680/Index_1391/"},
         {name: "Unloaded Dice Linkedin", url: "https://www.linkedin.com/company/unloaded-dice-games"}]
 ---
 # OVERVIEW
@@ -34,6 +35,16 @@ The Stack is often a background structure within games to support resolution, _I
 
 
 # CONTRIBUTIONS
+## Production
+I coordinated the cross-functional team across code, art, design, and QA to ensure the Steam requirements and builds were met on time.
+By managing the backlog and planning sprints within Agile frameworks, I ensured consistent progress and adherence to our deadlines. 
+I oversee risk management, balance features against time constraints as well as ensuring bug fixes and stability is built into our pipeline.
+I also oversaw the marketing campaign of the game, setting up and overseeing the posting schedule to get the most views on our page as possible leading up to launch.
+
+As a result of my efforts, the game is on track to release on Steam by the end of the Calendar year.
+![img.png](../../assets/SocialMediaPlanner.png)
+
+
 ## GAME DESIGN RESEARCH
 To establish a basis for the design of the game, I did background research into the **Stack** mechanic as seen through other games.
 While widely popularized by Magic The Gathering (1994), the stack as a resolution system predates collectible card games and has persisted across decades of board and card game design.
@@ -132,52 +143,10 @@ In some cases unit tests were leveraged on specific components to ensure they we
 Through such a process, I often found bugs within backend systems and would work on documenting them to ensure they would be fixed.
 Such discovery of bugs caught critical issues early, allowing for more time to fix critical infrastructure, and exposed me to almost every system in the game.
 
+Each content update had a log of changes made.
+This allowed for a clear history of design and allowed for others to easily test new content.
+I can provide an example upon request.
 
-Each content update had a log of changes made. This allowed for a clear history of design and allowed for others to easily test new content. 
-Below is an example of a changelog I created for a content update within the game. 
-
-### [4/17/2026] CONTENT PATCHES
-#### DESIGN CHANGES
-
-* Redraws now cannot be performed after the player plays a card. They also don’t draw an extra card.  
-  *This was to nerf them, with the expanded card advantage, they should feel more like a mulligan, rather than a card advantage piece. It now lets the player get out from a bad hand, but not abuse it for card advantage.*
-* Starting Deck has 1 less Deprioritize and 1 less Scripture in the deck.  
-  *Removing some of the power of the starting deck, I want to try keeping a card draw option in the deck.*
-
-* Reward generation follows a 1 aggro, 1 control, random generation.  
-  *Removing some random from the generation. It doesn't support knowing what the player is doing yet, as that was trickier to enable quickly with how the deck works right now. Yet this can work as a patch until we refine the generation systems over the summer.*
-
-  
-#### DOCTRINES
-##### BALANCING
-
-* **Reckless R `reckless`**  
-  Changed to also halve player block protocols that are added to the stack.  
-  *A nerf to reckless to make it feel more “reckless”. This balances it to be more aggressive but dampens the players ability to defend themselves. We could buff its damage potential in the future if the halving block is too much of a downside.*
-
-##### ADDITIONS
-* **Learned UC `learned`**  
-  At the start of stack resolution, draw cards equal to empty spaces on the Stack / 2;  
-  *This doctrine will encourage leaving space open on the stack. I think it's interesting at least. Might be very very good.*
-
-#### CARDS
-
-##### BALANCING
-
-* **C-1 R Silence `c_cancel_stack_resolution`**  
-  Removed Immutable.  
-  *Didn’t need it, and given this is the rare variant, it feels better to be able to move the silence around rather than watch it leave the stack.*
-
-* **C-1  UC Resolute Smite `c_damage_per_block`**  
-  Now has \[Immutable\]  
-  *Makes it hard to scale up value. I could've hardcoded it, yet I wanted flexibility in the future to potentially scale this effect.*
-
-
-##### ADDITIONS
-
-* **C-2 UC Fleeting Silence**: **`c_cancel_stack_resolution_feeble`**  
-  Cancel Stack Resolution; \[Feeble-1\]   
-  *Limited life 1-time silence effect to add another one into the mix. Technically it could run multiple turns.*
 
 ## PROGRAMMING
 In addition to generating content within the game, I programmed parts of the game's systems to allow for content to function.
@@ -186,8 +155,8 @@ The most important items I contributed are below.
 - **Run Systems:** Management of the player's deck and health over the course of the game.
 - **Effects:** The individual modular components that make up an effect. Predicates, gates, and operations. These are scripts that deal damage, draw cards, target enemy protocols etc. These were linked to in the CAT and other external tools to easily edit content within the game.
 - **Handlers:** The Handlers for doctrines, allowing them to have custom functionality.
-- **Data Tracking Systems:** The systems that track player data for balance and statistics. These systems were unit tested and use the game's event system to track data, which is sent to a Google database.
 
+- **Data Tracking Systems:** The systems that track player data for balance and statistics. These systems were unit tested and use the game's event system to track data, which is sent to a Google database.
 - **Tool Extensions:** Extensions to the CAT and relational tools to improve functionality.
 
 ## UI PROGRAMMING
@@ -195,6 +164,7 @@ I programmed various aspects of the game's UI, most importantly the Cards and no
 
 - **Hand UI:** The hand of cards that the player interacts with. Controls when and where a card can be played, and can be reordered to the player's liking.
 - **Card UI:** The cards themselves, implementation of UI designs that programmatically create cards when needed (such as when a card is drawn).
+- **Main Menu UI:** The main menu animations and functionality. This does not include the settings.
 
 - **Card Screen UI:** UI screens to display cards and related information. These are made up of the various rewards and deck view screens. These leverage pooling to reduce the number of objects created. They also have toggleable interactively depending on the application.
 
